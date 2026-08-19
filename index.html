@@ -1,9 +1,14 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>Gujarati Trader</title>
+
+<!-- GOOGLE FONTS (POPPINS) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 <!-- FONT AWESOME -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
@@ -24,20 +29,38 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1476345011189989&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code -->
+
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1476345011189989&ev=PageView&noscript=1"/>
+</noscript>
+
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 
 body{
   font-family:'Poppins',sans-serif;
-  background:#000;
-  color:#fff;
+  background:#ffffff;
+  color:#1f2937;
   text-align:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  min-height:100vh;
+}
+
+/* CONTAINER FOR RESPONSIVE WIDTH */
+.container{
+  width:100%;
+  max-width:480px;
+  padding:0 20px;
 }
 
 /* HERO */
 .hero{
-  padding:40px 20px 30px;
+  padding:60px 20px 30px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
 }
 
 /* LOGO */
@@ -46,10 +69,8 @@ body{
   height:130px;
   border-radius:50%;
   object-fit:cover;
-  border:3px solid rgba(255,255,255,0.2);
-  box-shadow:
-    0 0 20px rgba(255,215,0,0.8),
-    0 0 40px rgba(0,198,255,0.4);
+  border:4px solid #ffffff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
   margin-bottom:16px;
 }
 
@@ -57,8 +78,8 @@ body{
 .trader-name{
   font-size:26px;
   font-weight:800;
-  margin-bottom:14px;
-  background:linear-gradient(90deg,#00c6ff,#8e2de2,#ff0080);
+  margin-bottom:20px;
+  background:linear-gradient(90deg,#2563eb, #7c3aed, #ec4899);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
 }
@@ -69,122 +90,142 @@ body{
   width:100%;
   max-width:360px;
   padding:16px;
-  margin:0 auto 22px;
+  margin:0 auto 32px;
   font-size:17px;
   font-weight:800;
   border-radius:50px;
-  background:linear-gradient(90deg,#ff0080,#8e2de2,#00c6ff);
+  background:linear-gradient(90deg,#2563eb, #4f46e5);
   color:#fff;
   text-decoration:none;
-  box-shadow:0 10px 30px rgba(0,0,0,.7);
-  transition:.2s ease;
+  box-shadow:0 8px 20px rgba(37, 99, 235, 0.25);
+  transition:.3s ease;
 }
 .cta:hover{
-  transform:scale(1.03);
-  box-shadow:0 0 30px rgba(0,198,255,.9);
+  transform:translateY(-2px);
+  box-shadow:0 12px 24px rgba(37, 99, 235, 0.35);
 }
 
 /* TITLE */
 .hero h1{
-  font-size:30px;
+  font-size:28px;
   font-weight:800;
   margin-bottom:8px;
+  line-height:1.3;
+  color:#111827;
 }
 
 .hero p{
   font-size:15px;
-  color:#ccc;
+  color:#6b7280;
 }
 
 /* INFO */
 .info{
-  padding:28px 20px;
+  padding:20px 20px 60px;
+  width:100%;
 }
 
 .card{
-  background:linear-gradient(180deg,#0f1629,#05070d);
+  background:#f9fafb;
+  border: 1px solid #f3f4f6;
   border-radius:22px;
-  padding:22px;
-  box-shadow:0 0 30px rgba(0,255,255,.12);
+  padding:24px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.03);
+  text-align:left;
 }
 
 .point{
   display:flex;
   gap:14px;
   align-items:center;
-  margin:14px 0;
+  margin:16px 0;
 }
 
 .point i{
   font-size:18px;
-  color:#00c6ff;
+  color:#2563eb;
+  width:40px;
+  height:40px;
+  background:#eff6ff;
+  border-radius:12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-shrink:0;
 }
 
 .point span{
   font-size:15px;
-  text-align:left;
+  font-weight:500;
+  color:#374151;
 }
 
 /* FOOTER */
 .footer{
-  padding:20px 10px;
+  padding:30px 10px;
   font-size:13px;
-  color:#aaa;
+  color:#9ca3af;
+  border-top: 1px solid #f3f4f6;
+  width: 100%;
+  margin-top: auto;
 }
 </style>
 </head>
 
 <body>
 
-<section class="hero">
+<div class="container">
 
-  <img src="https://uploads.onecompiler.io/44m545b3g/44m545gcx/ChatGPT%20Image%20Apr%2022,%202026,%2008_23_30%20PM.png"
-       alt="Gujarati Trader Logo">
+  <section class="hero">
 
-  <div class="trader-name">
-     ગુજરાતી 𝐓𝐑𝐀𝐃𝐄𝐑 
+    <img src="https://uploads.onecompiler.io/447v8k97f/44jaaubcn/WhatsApp%20Image%202026-04-03%20at%2016.20.42.jpeg" alt="Gujarati Trader Logo">
+
+    <div class="trader-name">
+      💎 ગુજરાતી 𝐓𝐑𝐀𝐃𝐄𝐑 💎
+    </div>
+
+    <!-- TELEGRAM JOIN BUTTON -->
+    <a href="https://t.me/+C_5voZeeZYplYjll"
+       target="_blank"
+       class="cta subscribe-btn">
+      <i class="fab fa-telegram-plane"></i> 𝐉𝐎𝐈𝐍 𝐎𝐔𝐑 𝐓𝐄𝐋𝐄𝐆𝐑𝐀𝐌
+    </a>
+
+    <h1>India’s Most Trusted Stock Market Community</h1>
+    <p>Free Signals • Daily Analysis • Smart Risk Management</p>
+
+  </section>
+
+  <section class="info">
+    <div class="card">
+
+      <div class="point">
+        <i class="fa-solid fa-chart-line"></i>
+        <span>Intraday, Options, NIFTY & BANKNIFTY Calls</span>
+      </div>
+
+      <div class="point">
+        <i class="fa-solid fa-bullseye"></i>
+        <span>Accurate Entry, Exit & Target Levels</span>
+      </div>
+
+      <div class="point">
+        <i class="fa-solid fa-shield"></i>
+        <span>Risk Management Focused Strategy</span>
+      </div>
+
+      <div class="point">
+        <i class="fa-solid fa-fire"></i>
+        <span>Daily Free & Premium Market Analysis</span>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="footer">
+    © 2026 Gujarati Trader • All Rights Reserved
   </div>
 
-  <!-- TELEGRAM JOIN BUTTON -->
-  <a href="https://t.me/+C_5voZeeZYplYjll"
-     target="_blank"
-     class="cta subscribe-btn">
-    <i class="fab fa-telegram-plane"></i> 𝐉𝐎𝐈𝐍 𝐎𝐔𝐑 𝐓𝐄𝐋𝐄𝐆𝐑𝐀𝐌
-  </a>
-
-  <h1>India’s Most Trusted Stock Market Community</h1>
-  <p>Free Signals • Daily Analysis • Smart Risk Management</p>
-
-</section>
-
-<section class="info">
-  <div class="card">
-
-    <div class="point">
-      <i class="fa-solid fa-chart-line"></i>
-      <span>Intraday, Options, NIFTY & BANKNIFTY Calls</span>
-    </div>
-
-    <div class="point">
-      <i class="fa-solid fa-bullseye"></i>
-      <span>Accurate Entry, Exit & Target Levels</span>
-    </div>
-
-    <div class="point">
-      <i class="fa-solid fa-shield"></i>
-      <span>Risk Management Focused Strategy</span>
-    </div>
-
-    <div class="point">
-      <i class="fa-solid fa-fire"></i>
-      <span>Daily Free & Premium Market Analysis</span>
-    </div>
-
-  </div>
-</section>
-
-<div class="footer">
-  © 2026 Gujarati Trader • All Rights Reserved
 </div>
 
 <!-- TRACKING SCRIPT -->
